@@ -1,16 +1,27 @@
 import os
-class script(object):
-    START_TXT = """<b>ʜᴇʏ {}, {}\n\nɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !! 😍\n<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/zishananis_official">Z!$HAN ANi$</a></blockquote></b>"""
-    
-    HELP_TXT = """<b>ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..</b>"""
-    
-    TELE_TXT = """<b>/telegraph - sᴇɴᴅ ᴍᴇ ᴘɪᴄᴛᴜʀᴇ ᴏʀ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ (5ᴍʙ)
 
-ɴᴏᴛᴇ - ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡᴏʀᴋ ɪɴ ʙᴏᴛʜ ɢʀᴏᴜᴘs ᴀɴᴅ ʙᴏᴛ ᴘᴍ</b>"""
-    FSUB_TXT = """<b>• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ 😗
-• ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ᴛᴀʀɢᴇᴛ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ ᴏʀ Gʀᴏᴜᴘ  😉
-• sᴇɴᴅ /fsub ʏᴏᴜʀ_ᴛᴀʀɢᴇᴛ_ᴄʜᴀᴛ_ɪᴅ
-ᴇx: <code>/fsub -100xxxxxx</code>
+class script(object):
+
+    START_TXT = """<b>𝐇𝐞𝐲 {},
+
+𝐈 𝐀𝐦 𝐀 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥 𝐀𝐮𝐭𝐨𝐅𝐢𝐥𝐭𝐞𝐫 𝐁𝐨𝐭.
+𝐘𝐨𝐮 𝐂𝐚𝐧 𝐔𝐬𝐞 𝐌𝐞 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 — 𝐈 𝐖𝐢𝐥𝐥 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐎𝐫 𝐒𝐞𝐫𝐢𝐞𝐬
+𝐁𝐨𝐭𝐡 𝐈𝐧 𝐏𝐌 𝐀𝐧𝐝 𝐆𝐫𝐨𝐮𝐩𝐬</b>"""
+
+    HELP_TXT = """<b>Need help?
+Click on the buttons below to get details about specific modules.</b>"""
+
+    TELE_TXT = """<b>/telegraph - Upload picture/video (under 5MB) to Telegraph
+
+This command works in both groups and private chat.</b>"""
+
+    FSUB_TXT = """<b>You must set a Force Subscribe channel to use me properly.
+
+• Add me to your group and make me an admin
+• Also make me an admin in your Force Subscribe channel
+• Then send:
+
+<code>/fsub -100xxxxxxxxxx</code></b>
 
 ɴᴏᴡ ɪᴛ's ᴅᴏɴᴇ.ɪ ᴡɪʟʟ ᴄᴏᴍᴘᴇʟ ʏᴏᴜʀ ᴜsᴇʀs ᴛᴏ ᴊᴏɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ/ɢʀᴏᴜᴘ, ᴀɴᴅ I ᴡɪʟʟ ɴᴏᴛ ᴘʀᴏᴠɪᴅᴇ ᴀɴʏ ғɪʟᴇs ᴜɴᴛɪʟ ʏᴏᴜʀ ᴜsᴇʀs ᴊᴏɪɴ ʏᴏᴜʀ ᴛᴀʀɢᴇᴛ ᴄʜᴀɴɴᴇʟ.
 
