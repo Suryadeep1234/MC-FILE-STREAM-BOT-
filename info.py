@@ -13,15 +13,15 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '27761567'))
-API_HASH = environ.get('API_HASH', '9b7eba55db1f2ea32584cb981a1cd9d5')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7872783969:AAFd4Z86R0PXua9dxV8epeYdsJpEbT_d4Qc')
+API_ID = int(environ.get('API_ID', '28978038'))
+API_HASH = environ.get('API_HASH', 'dd7fa173882b6e3d3ccb0c70ccf6d626')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7637309577:AAH2UHaMqnQyJfoXy5Sy9Azqa0IYlIZewXA')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5446981726').split()]
-USERNAME = environ.get('USERNAME', "@zishananis_official") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002340773096'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/filmsexpert_1')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7404203924').split()]
+USERNAME = environ.get('USERNAME', "RDX1444") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002580632118'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/MC_MOVIES_PVT')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1002445219066').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
