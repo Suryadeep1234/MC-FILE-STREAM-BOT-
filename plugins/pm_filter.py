@@ -814,10 +814,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
                 #InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data=f'about')
-                ],[
-                InlineKeyboardButton('Upgrade', callback_data='seeplans'),
+		InlineKeyboardButton('Upgrade', callback_data='seeplans'),
 		InlineKeyboardButton('Top', callback_data="mostsearch")
+                
+                ],[
+                InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data=f'about')
                 #InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                 ],[
                 
