@@ -1159,3 +1159,44 @@ async def reset_group_command(client, message):
     await save_group_settings(grp_id, 'log', LOG_VR_CHANNEL)
     await message.reply_text('ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ʀᴇꜱᴇᴛ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ...')
     
+#RDX ADDED CODE
+@Client.on_callback_query()
+async def callback_handler(client, query):
+    data = query.data
+
+    if data == "upgrade":
+        buttons = [
+            [InlineKeyboardButton("• BUY PREMIUM •", callback_data="buy")],
+            [
+                InlineKeyboardButton("• REFER FRIENDS •", callback_data="refer"),
+                InlineKeyboardButton("FREE TRIAL •", callback_data="trial")
+            ],
+            [InlineKeyboardButton("⇚ BACK TO HOME ⇚", callback_data="home")]
+        ]
+        await query.message.edit_text(
+            """🎁 <b>PREMIUM FEATURES :</b>
+
+○ NO NEED TO VERIFY
+○ NO NEED TO OPEN LINKS
+○ DIRECT FILES
+○ AD-FREE EXPERIENCE
+○ HIGH-SPEED DOWNLOAD LINK
+○ MULTI-PLAYER STREAMING LINKS
+○ UNLIMITED MOVIES & SERIES
+○ FULL ADMIN SUPPORT
+○ REQUEST WILL BE COMPLETED IN 1H [IF AVAILABLE]
+
+• YOU CAN GET PREMIUM BY REFERRING YOUR FRIENDS OR BUYING PREMIUM SERVICE
+
+🔘 CHECK YOUR ACTIVE PLAN: /myplan
+
+‼ AFTER SENDING SCREENSHOT GIVE US SOME TIME TO ADD YOU TO PREMIUM LIST.""",
+            reply_markup=InlineKeyboardMarkup(buttons)
+        )
+
+    elif data == "home":
+        await start_cmd(client, query.message)
+
+@Client.on_message(filters.command("myplan"))
+async def myplan(client, message):
+    await message.reply_text("💳 You are currently on: Free Plan\n\nUpgrade to Premium for more features!")
