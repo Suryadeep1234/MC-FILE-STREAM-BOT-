@@ -215,7 +215,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
                             #InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Upgrade', callback_data='seeplans'),
+                            InlineKeyboardButton('Primium', callback_data='seeplans'),
                             InlineKeyboardButton('Top', callback_data="mostsearch")  
                         ],[
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about'),
@@ -278,7 +278,7 @@ async def start(client:Client, message):
             InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
                             #InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Upgrade', callback_data='seeplans'),
+                            InlineKeyboardButton('Premium', callback_data='seeplans'),
                             InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch")
                         ],[
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
